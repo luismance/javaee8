@@ -1,0 +1,4 @@
+com\mance\dao\EmployeeDAO.class
+com\mance\config\JAXRSConfiguration.class
+com\mance\model\Employee.class
+com\mance\service\EmployeeREST.class
