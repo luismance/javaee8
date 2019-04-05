@@ -28,3 +28,18 @@ drivers
 copy mysql-connector jar file and module.xml file to wildfly-14.0.1.Final\modules\system\layers\base\com\mysql\driver8\main
 
 use the sql file to create the local database
+
+
+When getting the error "The server time zone value 'Malay Peninsula Standard Time' is unrecognized or represents more than one time zone." execute this on MySQL Workbench.
+
+```
+SET @@global.time_zone = '+00:00';
+SET @@session.time_zone = '+00:00';
+```
+ 
+
+with the following sql statements check if the values were set:
+
+```
+SELECT @@global.time_zone, @@session.time_zone;
+```
